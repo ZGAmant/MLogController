@@ -1,0 +1,419 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D25BD3502BD2084000C49915 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D25BD34F2BD2084000C49915 /* AppDelegate.m */; };
+		D25BD3532BD2084000C49915 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D25BD3522BD2084000C49915 /* ViewController.m */; };
+		D25BD3552BD2084100C49915 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D25BD3542BD2084100C49915 /* Assets.xcassets */; };
+		D25BD3582BD2084100C49915 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = D25BD3572BD2084100C49915 /* Base */; };
+		D25BD35A2BD2084100C49915 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D25BD3592BD2084100C49915 /* main.m */; };
+		D25BD3652BD20EDD00C49915 /* DeviceCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D25BD3642BD20EDD00C49915 /* DeviceCell.xib */; };
+		D25BD3692BD2125100C49915 /* DeviceTableViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D25BD3682BD2125100C49915 /* DeviceTableViewDelegate.m */; };
+		D25BD36C2BD2141A00C49915 /* DeviceCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D25BD36B2BD2141A00C49915 /* DeviceCell.m */; };
+		D25BD3742BD21C3300C49915 /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = D25BD36F2BD21C3300C49915 /* GCDAsyncSocket.m */; };
+		D25BD3752BD21C3300C49915 /* GCDAsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = D25BD3712BD21C3300C49915 /* GCDAsyncUdpSocket.m */; };
+		D25BD3C62BD6135400C49915 /* SocketManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D25BD3C52BD6135400C49915 /* SocketManager.m */; };
+		D25BD3C92BD7B31000C49915 /* ClientSocketModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D25BD3C82BD7B31000C49915 /* ClientSocketModel.m */; };
+		D9282E7A2BD964E000A8FFBC /* DeviceTableViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D9282E792BD964E000A8FFBC /* DeviceTableViewModel.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D25BD34B2BD2084000C49915 /* MLogController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MLogController.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D25BD34E2BD2084000C49915 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D25BD34F2BD2084000C49915 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D25BD3512BD2084000C49915 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		D25BD3522BD2084000C49915 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		D25BD3542BD2084100C49915 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D25BD3572BD2084100C49915 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D25BD3592BD2084100C49915 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D25BD35B2BD2084100C49915 /* MLogController.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MLogController.entitlements; sourceTree = "<group>"; };
+		D25BD3632BD20E0F00C49915 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		D25BD3642BD20EDD00C49915 /* DeviceCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DeviceCell.xib; sourceTree = "<group>"; };
+		D25BD3672BD2125100C49915 /* DeviceTableViewDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DeviceTableViewDelegate.h; sourceTree = "<group>"; };
+		D25BD3682BD2125100C49915 /* DeviceTableViewDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DeviceTableViewDelegate.m; sourceTree = "<group>"; };
+		D25BD36A2BD2141A00C49915 /* DeviceCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DeviceCell.h; sourceTree = "<group>"; };
+		D25BD36B2BD2141A00C49915 /* DeviceCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DeviceCell.m; sourceTree = "<group>"; };
+		D25BD36E2BD21C3300C49915 /* GCDAsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncSocket.h; sourceTree = "<group>"; };
+		D25BD36F2BD21C3300C49915 /* GCDAsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncSocket.m; sourceTree = "<group>"; };
+		D25BD3702BD21C3300C49915 /* GCDAsyncUdpSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncUdpSocket.h; sourceTree = "<group>"; };
+		D25BD3712BD21C3300C49915 /* GCDAsyncUdpSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncUdpSocket.m; sourceTree = "<group>"; };
+		D25BD3C42BD6135400C49915 /* SocketManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SocketManager.h; sourceTree = "<group>"; };
+		D25BD3C52BD6135400C49915 /* SocketManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SocketManager.m; sourceTree = "<group>"; };
+		D25BD3C72BD7B31000C49915 /* ClientSocketModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClientSocketModel.h; sourceTree = "<group>"; };
+		D25BD3C82BD7B31000C49915 /* ClientSocketModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClientSocketModel.m; sourceTree = "<group>"; };
+		D9282E782BD964E000A8FFBC /* DeviceTableViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DeviceTableViewModel.h; sourceTree = "<group>"; };
+		D9282E792BD964E000A8FFBC /* DeviceTableViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DeviceTableViewModel.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D25BD3482BD2084000C49915 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D25BD3422BD2084000C49915 = {
+			isa = PBXGroup;
+			children = (
+				D25BD34D2BD2084000C49915 /* MLogController */,
+				D25BD34C2BD2084000C49915 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D25BD34C2BD2084000C49915 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D25BD34B2BD2084000C49915 /* MLogController.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D25BD34D2BD2084000C49915 /* MLogController */ = {
+			isa = PBXGroup;
+			children = (
+				D25BD3C42BD6135400C49915 /* SocketManager.h */,
+				D25BD3C52BD6135400C49915 /* SocketManager.m */,
+				D25BD3C72BD7B31000C49915 /* ClientSocketModel.h */,
+				D25BD3C82BD7B31000C49915 /* ClientSocketModel.m */,
+				D25BD3722BD21C3300C49915 /* CocoaAsyncSocket */,
+				D25BD3662BD20EE500C49915 /* Nibs */,
+				D25BD34E2BD2084000C49915 /* AppDelegate.h */,
+				D25BD34F2BD2084000C49915 /* AppDelegate.m */,
+				D25BD3512BD2084000C49915 /* ViewController.h */,
+				D25BD3522BD2084000C49915 /* ViewController.m */,
+				D9282E782BD964E000A8FFBC /* DeviceTableViewModel.h */,
+				D9282E792BD964E000A8FFBC /* DeviceTableViewModel.m */,
+				D25BD3672BD2125100C49915 /* DeviceTableViewDelegate.h */,
+				D25BD3682BD2125100C49915 /* DeviceTableViewDelegate.m */,
+				D25BD3542BD2084100C49915 /* Assets.xcassets */,
+				D25BD3562BD2084100C49915 /* Main.storyboard */,
+				D25BD3592BD2084100C49915 /* main.m */,
+				D25BD3632BD20E0F00C49915 /* PrefixHeader.pch */,
+				D25BD35B2BD2084100C49915 /* MLogController.entitlements */,
+			);
+			path = MLogController;
+			sourceTree = "<group>";
+		};
+		D25BD3662BD20EE500C49915 /* Nibs */ = {
+			isa = PBXGroup;
+			children = (
+				D25BD3642BD20EDD00C49915 /* DeviceCell.xib */,
+				D25BD36A2BD2141A00C49915 /* DeviceCell.h */,
+				D25BD36B2BD2141A00C49915 /* DeviceCell.m */,
+			);
+			path = Nibs;
+			sourceTree = "<group>";
+		};
+		D25BD3722BD21C3300C49915 /* CocoaAsyncSocket */ = {
+			isa = PBXGroup;
+			children = (
+				D25BD36E2BD21C3300C49915 /* GCDAsyncSocket.h */,
+				D25BD36F2BD21C3300C49915 /* GCDAsyncSocket.m */,
+				D25BD3702BD21C3300C49915 /* GCDAsyncUdpSocket.h */,
+				D25BD3712BD21C3300C49915 /* GCDAsyncUdpSocket.m */,
+			);
+			path = CocoaAsyncSocket;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D25BD34A2BD2084000C49915 /* MLogController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D25BD35E2BD2084100C49915 /* Build configuration list for PBXNativeTarget "MLogController" */;
+			buildPhases = (
+				D25BD3472BD2084000C49915 /* Sources */,
+				D25BD3482BD2084000C49915 /* Frameworks */,
+				D25BD3492BD2084000C49915 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MLogController;
+			productName = MLogController;
+			productReference = D25BD34B2BD2084000C49915 /* MLogController.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D25BD3432BD2084000C49915 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					D25BD34A2BD2084000C49915 = {
+						CreatedOnToolsVersion = 15.3;
+					};
+				};
+			};
+			buildConfigurationList = D25BD3462BD2084000C49915 /* Build configuration list for PBXProject "MLogController" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D25BD3422BD2084000C49915;
+			productRefGroup = D25BD34C2BD2084000C49915 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D25BD34A2BD2084000C49915 /* MLogController */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D25BD3492BD2084000C49915 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D25BD3552BD2084100C49915 /* Assets.xcassets in Resources */,
+				D25BD3582BD2084100C49915 /* Base in Resources */,
+				D25BD3652BD20EDD00C49915 /* DeviceCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D25BD3472BD2084000C49915 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D25BD3742BD21C3300C49915 /* GCDAsyncSocket.m in Sources */,
+				D25BD3C92BD7B31000C49915 /* ClientSocketModel.m in Sources */,
+				D25BD3532BD2084000C49915 /* ViewController.m in Sources */,
+				D25BD36C2BD2141A00C49915 /* DeviceCell.m in Sources */,
+				D25BD35A2BD2084100C49915 /* main.m in Sources */,
+				D25BD3752BD21C3300C49915 /* GCDAsyncUdpSocket.m in Sources */,
+				D25BD3692BD2125100C49915 /* DeviceTableViewDelegate.m in Sources */,
+				D9282E7A2BD964E000A8FFBC /* DeviceTableViewModel.m in Sources */,
+				D25BD3C62BD6135400C49915 /* SocketManager.m in Sources */,
+				D25BD3502BD2084000C49915 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D25BD3562BD2084100C49915 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D25BD3572BD2084100C49915 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D25BD35C2BD2084100C49915 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		D25BD35D2BD2084100C49915 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		D25BD35F2BD2084100C49915 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MLogController/MLogController.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 93TQH7VSQ9;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GCC_PREFIX_HEADER = $SRCROOT/MLogController/PrefixHeader.pch;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zg.MLogController;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+			};
+			name = Debug;
+		};
+		D25BD3602BD2084100C49915 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MLogController/MLogController.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 93TQH7VSQ9;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GCC_PREFIX_HEADER = $SRCROOT/MLogController/PrefixHeader.pch;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zg.MLogController;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D25BD3462BD2084000C49915 /* Build configuration list for PBXProject "MLogController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D25BD35C2BD2084100C49915 /* Debug */,
+				D25BD35D2BD2084100C49915 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D25BD35E2BD2084100C49915 /* Build configuration list for PBXNativeTarget "MLogController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D25BD35F2BD2084100C49915 /* Debug */,
+				D25BD3602BD2084100C49915 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D25BD3432BD2084000C49915 /* Project object */;
+}
