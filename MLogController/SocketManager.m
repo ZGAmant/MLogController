@@ -109,6 +109,7 @@ static SocketManager *socketManager = nil;
             name = [[NSString alloc]initWithData:data encoding:NSUTF8StringEncoding];
             if (data.length == model.currentManagerHeader.dataLength) {
                 model.deviceName = name;
+                model.isConnect = YES;
                 [self.delegate socketAddConnection:model];
             }else{
                 NSLog(@"名字读取失败");
@@ -148,7 +149,7 @@ static SocketManager *socketManager = nil;
     // 生成一个唯一的标识符
     NSString *clientIdentifier = [NSString stringWithFormat:@"%p", sock];
     // 删除客户端连接信息
-    [self.clientSockets removeObjectForKey:clientIdentifier];
+//    [self.clientSockets removeObjectForKey:clientIdentifier];
 }
 
 /// 解析数据

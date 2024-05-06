@@ -349,6 +349,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				GCC_PREFIX_HEADER = $SRCROOT/MLogController/PrefixHeader.pch;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSMainStoryboardFile = Main;
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
@@ -377,6 +378,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				GCC_PREFIX_HEADER = $SRCROOT/MLogController/PrefixHeader.pch;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSMainStoryboardFile = Main;
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;

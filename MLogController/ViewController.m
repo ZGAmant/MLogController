@@ -10,11 +10,12 @@
 #import "SocketManager.h"
 
 
-@interface ViewController ()<SocketManagerDelegate>
+@interface ViewController ()<SocketManagerDelegate,NSNetServiceDelegate>
 @property (weak) IBOutlet NSTableView *devicesTableView;
 @property (weak) IBOutlet NSTableView *logsTableView;
 @property (nonatomic,strong)DeviceTableViewDelegate *deviceTableDelegate;
 @property (nonatomic,strong)SocketManager *socketManager;
+@property (nonatomic,strong)NSNetService *netService;
 @end
 
 @implementation ViewController
@@ -22,11 +23,14 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self.socketManager startServers];
+    [self.netService publish];
     self.view.frame = NSMakeRect(0, 0, 1200, 800);
     [self.devicesTableView registerNib:[[NSNib alloc] initWithNibNamed:@"DeviceCell" bundle:nil] forIdentifier:@"ViewControllerDeviceCell"];
 //    [self.logsTableView registerNib:[[NSNib alloc] initWithNibNamed:@"MyCustomCell" bundle:nil] forIdentifier:@"ViewControllerLogCell"];
     self.devicesTableView.delegate = self.deviceTableDelegate;
     self.devicesTableView.dataSource = self.deviceTableDelegate;
+    
+    
     
 }
 
@@ -57,6 +61,14 @@
     [self.devicesTableView reloadData];
 }
 
+#pragma mark - NSNetServiceDelegate
+-(void)netServiceDidPublish:(NSNetService *)sender{
+    NSLog(@"发布了监听");
+}
+-(void)netService:(NSNetService *)sender didNotPublish:(NSDictionary<NSString *,NSNumber *> *)errorDict{
+    NSLog(@"没有发布:%@",errorDict);
+}
+
 #pragma mark - 懒加载
 -(DeviceTableViewDelegate *)deviceTableDelegate{
     if(!_deviceTableDelegate){
@@ -70,6 +82,13 @@
         _socketManager.delegate = self;
     }
     return _socketManager;
+}
+-(NSNetService *)netService{
+    if (!_netService) {
+        _netService = [[NSNetService alloc] initWithDomain:@"local." type:@"_companion-link._tcp." name:@"LOGControllerServices" port:12346];
+        _netService.delegate = self;
+    }
+    return _netService;
 }
 
 @end
